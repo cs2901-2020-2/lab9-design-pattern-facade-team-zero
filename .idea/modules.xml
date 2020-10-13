@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ProjectModuleManager">
@@ -5,4 +6,13 @@
       <module fileurl="file://$PROJECT_DIR$/.idea/lab9-design-pattern-facade-team-zero.iml" filepath="$PROJECT_DIR$/.idea/lab9-design-pattern-facade-team-zero.iml" />
     </modules>
   </component>
+=======
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/lab9-design-pattern-facade-team-zero.iml" filepath="$PROJECT_DIR$/.idea/lab9-design-pattern-facade-team-zero.iml" />
+    </modules>
+  </component>
+>>>>>>> 0e965713303afdbef1b1dff5649d6f1d30b7ee3b
 </project>
