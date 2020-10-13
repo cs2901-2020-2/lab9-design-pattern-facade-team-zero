@@ -1,6 +1,6 @@
 package facade;
 
-public class Project {
+public class Projector {
     static final Logger logger = Logger.getLogger(Projector.class.getName());
 
     public void On() {
