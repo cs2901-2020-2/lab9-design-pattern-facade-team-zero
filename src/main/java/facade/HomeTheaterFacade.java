@@ -14,14 +14,14 @@ class HomeTheaterFacade {
     TheaterLights lights;
     PopcornPopper popcorn;
 
-    HomeTheaterFacade(){
-        amp = Amplifier();
-        dvd = DVDPlayer();
-        cd = CDPlayer();
-        projector = Projector();
-        screen = Screen();
-        lights = TheaterLights();
-        popcorn = PopcornPopper();
+    HomeTheaterFacade(Amplifier amp, DVDPlayer dvd, CDPlayer cd, Projector projector, Screen screen, TheaterLights lights, PopcornPopper popcorn){
+        this.amp = amp;
+        this.dvd = dvd;
+        this.cd = cd;
+        this.projector = projector;
+        this.screen = screen;
+        this.lights = lights;
+        this.popcorn = popcorn;
     }
 
     void PlayMovie(String title){
