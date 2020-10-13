@@ -19,6 +19,6 @@ class Amplifier {
     }
 
     public void SetVolume(int level){
-        logger.info("Volume set at %d%.", level);
+        logger.info("Volume set at %d%." + level);
     }
 }

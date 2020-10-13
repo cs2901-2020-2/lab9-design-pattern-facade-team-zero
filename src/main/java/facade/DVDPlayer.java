@@ -1,7 +1,15 @@
 package facade;
 
+import java.util.logging.Logger;
+
 public class DVDPlayer implements Player{
-    public DVDPlayer{
+
+    static final Logger logger = Logger.getLogger(DVDPlayer.class.getName());
+
+    boolean turned;
+    boolean stop;
+    boolean ejec;
+    public DVDPlayer(){
         turned = false;
         stop = false;
         ejec = false;

@@ -14,14 +14,23 @@ class HomeTheaterFacade {
     TheaterLights lights;
     PopcornPopper popcorn;
 
-    HomeTheaterFacade(){
+    public HomeTheaterFacade() {
         amp = new Amplifier();
         dvd = new DVDPlayer();
         cd = new CDPlayer();
         projector = new Projector();
         screen = new Screen();
-        lights = TheaterLights();
-        popcorn = PopcornPopper();
+        lights = new TheaterLights();
+        popcorn = new PopcornPopper();
+    }
+    public HomeTheaterFacade(Amplifier amp, DVDPlayer dvd, CDPlayer cd, Projector projector, Screen screen, TheaterLights lights, PopcornPopper popcorn){
+        this.amp = amp;
+        this.dvd = dvd;
+        this.cd = cd;
+        this.projector = projector;
+        this.screen = screen;
+        this.lights = lights;
+        this.popcorn = popcorn;
     }
 
     void PlayMovie(String title){
@@ -34,11 +43,11 @@ class HomeTheaterFacade {
         amp.SetSource(dvd);
         amp.SetVolume(65);
         lights.Dim();
-        logger.info("Now playing %s", title);
+        logger.info("Now playing %s" + title);
     }
 
     void EndMovie(){
-        logger.info("The movie has ended. Turning off all electronics.")
+        logger.info("The movie has ended. Turning off all electronics.");
         lights.On();
         amp.Off();
         dvd.Off();
