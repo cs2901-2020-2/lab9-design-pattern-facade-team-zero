@@ -14,15 +14,7 @@ class HomeTheaterFacade {
     TheaterLights lights;
     PopcornPopper popcorn;
 
-    public HomeTheaterFacade() {
-        amp = new Amplifier();
-        dvd = new DVDPlayer();
-        cd = new CDPlayer();
-        projector = new Projector();
-        screen = new Screen();
-        lights = new TheaterLights();
-        popcorn = new PopcornPopper();
-    }
+
     public HomeTheaterFacade(Amplifier amp, DVDPlayer dvd, CDPlayer cd, Projector projector, Screen screen, TheaterLights lights, PopcornPopper popcorn){
         this.amp = amp;
         this.dvd = dvd;

@@ -1,10 +1,8 @@
 package facade;
 import java.util.logging.Logger;
-public class CDPlayer implements Item{
+public class CDPlayer extends Player{
     static final Logger logger = Logger.getLogger(CDPlayer.class.getName());
-    boolean turned;
-    boolean stop;
-    boolean ejec;
+
     public CDPlayer(){
         turned = false;
         stop = false;

@@ -2,13 +2,11 @@ package facade;
 
 import java.util.logging.Logger;
 
-public class DVDPlayer implements Item{
+public class DVDPlayer extends Player  {
 
     static final Logger logger = Logger.getLogger(DVDPlayer.class.getName());
 
-    boolean turned;
-    boolean stop;
-    boolean ejec;
+
     public DVDPlayer(){
         turned = false;
         stop = false;
