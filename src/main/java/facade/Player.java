@@ -4,7 +4,9 @@ import java.util.logging.Logger;
 public class Player{
     static final Logger logger = Logger.getLogger(Player.class.getName());
     protected boolean turned;
-    protected boolean execution;
+    protected boolean stop;
+    protected boolean ejec;
+    
 
     public Player(){
         turned = false;
@@ -12,15 +14,19 @@ public class Player{
     }
 
     public void turnOn(){
+        logger.info("turned on");
         this.turned = true;
     }
     public void turnOff(){
+        logger.info("turned off");
         this.turned = false;
     }
     public void stop(){
-        this.execution = true;
+        logger.info("stopped");
+        this.stop = true;
     }
     public void ejec(){
-        this.execution = false;
+        logger.info("ejected");
+        this.ejec = false;
     }
 }
