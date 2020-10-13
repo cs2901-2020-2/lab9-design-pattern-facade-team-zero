@@ -15,11 +15,11 @@ class HomeTheaterFacade {
     PopcornPopper popcorn;
 
     HomeTheaterFacade(){
-        amp = Amplifier();
-        dvd = DVDPlayer();
-        cd = CDPlayer();
-        projector = Projector();
-        screen = Screen();
+        amp = new Amplifier();
+        dvd = new DVDPlayer();
+        cd = new CDPlayer();
+        projector = new Projector();
+        screen = new Screen();
         lights = TheaterLights();
         popcorn = PopcornPopper();
     }
