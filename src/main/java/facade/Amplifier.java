@@ -14,7 +14,7 @@ class Amplifier {
         logger.info("Amplifier off.");
     }
 
-    public void SetSource(Player player){
+    public void SetSource(DVDPlayer player){
         logger.info("Source selected.");
     }
 

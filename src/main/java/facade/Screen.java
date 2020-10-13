@@ -1,6 +1,6 @@
 package facade;
-
-public class Screen {
+import java.util.logging.Logger;
+public class Screen{
     static final Logger logger = Logger.getLogger(Screen.class.getName());
 
     public void Down() {

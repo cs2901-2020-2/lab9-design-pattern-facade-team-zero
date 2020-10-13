@@ -2,7 +2,7 @@ package facade;
 
 import java.util.logging.Logger;
 
-public class DVDPlayer implements Player{
+public class DVDPlayer implements Item{
 
     static final Logger logger = Logger.getLogger(DVDPlayer.class.getName());
 

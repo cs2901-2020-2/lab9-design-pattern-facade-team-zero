@@ -2,7 +2,7 @@ package facade;
 
 import java.util.logging.Logger;
 
-public class PopcornPopper{
+public class PopcornPopper implements Item{
     boolean popper;
     boolean makePopcorn;
 

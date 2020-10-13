@@ -2,7 +2,7 @@ package facade;
 
 import java.util.logging.Logger;
 
-public class TheaterLights{
+public class TheaterLights {
 boolean lightTurnOn;
 int porcentage;
 
